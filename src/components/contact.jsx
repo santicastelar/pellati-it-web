@@ -11,6 +11,9 @@ const initialState = {
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
+  const [status, setStatus] = useState("");
+  const [sending, setSending] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -24,43 +27,45 @@ export const Contact = (props) => {
     setState({ ...initialState });
   };
 
-  const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-    e.currentTarget.style.setProperty("--x", `${x}%`);
-    e.currentTarget.style.setProperty("--y", `${y}%`);
-  };
-
-const handleMouseLeave = (e) => {
-  e.currentTarget.style.setProperty("--x", "18%");
-  e.currentTarget.style.setProperty("--y", "50%");
-};
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(name, email, message);
+    setSending(true);
+    setStatus("");
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        e.target,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+emailjs
+  .sendForm(
+    "service_6v7wbog",
+    "template_o2pnpxn",
+    e.target,
+    "YzJBYp5X2jz8q7P4Q"
+  )
+  .then(
+    (result) => {
+      console.log("Mensaje enviado:", result.text);
+
+      clearState();
+      setSending(false);
+      setStatus("success");
+    },
+    (error) => {
+      console.error("Error al enviar:", error);
+
+      setSending(false);
+      setStatus("error");
+    }
+  );
   };
+
+  /* WhatsApp */
+  const whatsappNumber = "5491156564124";
+
+  const whatsappMessage =
+    "Hola Pellati IT, quisiera realizar una consulta sobre sus servicios.";
+
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
 
   return (
     <div>
@@ -69,9 +74,9 @@ const handleMouseLeave = (e) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-       <h2 className="contact-glow">
-  Contactanos
-</h2>
+                <h2 className="contact-glow">
+                  Contactanos
+                </h2>
 
                 <p>
                   Contanos qué necesitás y nos pondremos en contacto con vos.
@@ -124,9 +129,44 @@ const handleMouseLeave = (e) => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Enviar consulta
-                </button>
+                <div className="contact-actions">
+                  <button
+                    type="submit"
+                    className="btn btn-custom btn-lg"
+                    disabled={sending}
+                  >
+                    {sending ? "Enviando..." : "Enviar consulta"}
+                  </button>
+
+                  <div className="whatsapp-wrapper">
+                    <span className="whatsapp-tooltip">
+                      Escribinos por WhatsApp
+                    </span>
+
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whatsapp-button"
+                      aria-label="Contactar por WhatsApp"
+                    >
+                      <i className="fa fa-whatsapp"></i>
+                      WhatsApp
+                    </a>
+                  </div>
+                </div>
+
+                {status === "success" && (
+                  <p className="form-success">
+                    ✓ Consulta enviada correctamente.
+                  </p>
+                )}
+
+                {status === "error" && (
+                  <p className="form-error">
+                    No pudimos enviar la consulta. Intentá nuevamente.
+                  </p>
+                )}
               </form>
             </div>
           </div>

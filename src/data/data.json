@@ -22,12 +22,12 @@
 
   "Gallery": [
   {
-    "title": "Optimización y actualización de equipos",
+    "title": "Cambio de discos sólidos",
     "largeImage": "img/portfolio/01-large.jpg",
     "smallImage": "img/portfolio/01-small.jpg"
   },
   {
-    "title": "Mantenimiento de equipos",
+    "title": "Cambio de pasta térmica",
     "largeImage": "img/portfolio/02-large.jpg",
     "smallImage": "img/portfolio/02-small.jpg"
   },
@@ -37,17 +37,17 @@
     "smallImage": "img/portfolio/03-small.jpg"
   },
   {
-    "title": "Instalación y configuración de software",
+    "title": "Instalación de software",
     "largeImage": "img/portfolio/04-large.jpg",
     "smallImage": "img/portfolio/04-small.jpg"
   },
   {
-    "title": "Asistencia remota",
+    "title": "Soluciones con TeamViewer",
     "largeImage": "img/portfolio/05-large.jpg",
     "smallImage": "img/portfolio/05-small.jpg"
   },
   {
-    "title": "Soluciones Cloud",
+    "title": "Administración de redes",
     "largeImage": "img/portfolio/06-large.jpg",
     "smallImage": "img/portfolio/06-small.jpg"
   }
