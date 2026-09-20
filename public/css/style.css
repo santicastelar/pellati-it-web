@@ -259,7 +259,7 @@ a:focus,
   cursor: default;
 }
 
-/* Mouse encima: celeste suave */
+/* Mouse enima: celeste suave */
 .intro h1:hover {
   color: #5ca9fb;
   transform: translateY(-3px);
@@ -271,7 +271,7 @@ a:focus,
 
 /* Al sacar el mouse: pequeño destello ámbar */
 .intro h1.title-led-exit {
-  color: #f19d48e8;
+  color: #ec9844b7;
   transform: translateY(0);
 
   text-shadow:
@@ -607,19 +607,19 @@ header .intro-text {
   color: #888;
 }
 /* Contact Section */
+/* Contact Section */
 #contact {
   padding: 100px 0 60px;
 
   background: linear-gradient(
     135deg,
     #4d6072 0%,
-    #496785 50%,
-    #365d86 100%
+    #0e2c49 50%,
+    #0c2c4e 100%
   );
 
   color: #fff;
 }
-
 
 #contact .section-title {
   margin-bottom: 40px;
@@ -654,6 +654,7 @@ header .intro-text {
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400;
+  
 }
 #contact form {
   padding-top: 20px;
