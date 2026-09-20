@@ -24,12 +24,26 @@ export const Contact = (props) => {
     setState({ ...initialState });
   };
 
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    e.currentTarget.style.setProperty("--x", `${x}%`);
+    e.currentTarget.style.setProperty("--y", `${y}%`);
+  };
+
+const handleMouseLeave = (e) => {
+  e.currentTarget.style.setProperty("--x", "18%");
+  e.currentTarget.style.setProperty("--y", "50%");
+};
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log(name, email, message);
 
-    // Configuraremos EmailJS más adelante.
     emailjs
       .sendForm(
         "YOUR_SERVICE_ID",
@@ -55,7 +69,9 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Contactanos</h2>
+       <h2 className="contact-glow">
+  Contactanos
+</h2>
 
                 <p>
                   Contanos qué necesitás y nos pondremos en contacto con vos.

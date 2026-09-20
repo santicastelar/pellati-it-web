@@ -271,7 +271,7 @@ a:focus,
 
 /* Al sacar el mouse: pequeño destello ámbar */
 .intro h1.title-led-exit {
-  color: #ec9844b7;
+  color: #d6cfc7f1;
   transform: translateY(0);
 
   text-shadow:
@@ -285,16 +285,6 @@ a:focus,
     text-shadow 0.25s ease;
 }
 
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  transform: translateY(-3px);
-
-  text-shadow:
-    0 8px 25px rgba(92, 169, 251, 0.20),
-    0 0 18px rgba(255, 157, 46, 0.10);
-}
 .intro h1 span {
   font-weight: 800;
   color: #5ca9fb;
@@ -620,7 +610,18 @@ header .intro-text {
 
   color: #fff;
 }
+#contact .section-title h2::after {
+  transition: all 0.4s ease;
+}
 
+#contact .section-title h2:hover::after {
+  width: 110px;
+  background: linear-gradient(
+    to right,
+    #5ca9fb,
+    #8ec5ff
+  );
+}
 #contact .section-title {
   margin-bottom: 40px;
 }
@@ -650,11 +651,10 @@ header .intro-text {
 }
 #contact h3 {
   color: #fff;
-  margin-top: 80px;
+  margin-top: 10px;
   margin-bottom: 25px;
-  padding-bottom: 20px;
-  font-weight: 400;
-  
+  padding-bottom: 15px;
+  font-weight: 500;
 }
 #contact form {
   padding-top: 20px;
@@ -716,13 +716,87 @@ label {
 #contact .contact-item {
   margin: 20px 0;
 }
-#contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
-  margin-bottom: 10px;
-  display: block;
+
+#contact .contact-info h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  padding-bottom: 12px;
 }
+/* Información de contacto */
+#contact .contact-info {
+  padding-top: 10px;
+}
+
+#contact .contact-info h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+}
+
+/* Tarjetas de información */
+#contact .contact-item {
+  margin: 0 0 16px;
+  padding: 16px 18px;
+
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#contact .contact-item:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(92, 169, 251, 0.45);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.12),
+    0 0 12px rgba(92, 169, 251, 0.08);
+}
+
+/* Ubicación / Teléfono / Email */
+#contact .contact-item span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 7px;
+
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Iconos */
 #contact .contact-item i.fa {
-  margin-right: 10px;
+  width: 18px;
+  margin-right: 0;
+
+  color: #5ca9fb;
+  font-size: 17px;
+
+  text-align: center;
+}
+
+/* Texto de los datos */
+#contact .contact-item p {
+  margin: 0;
+
+  color: #d4d8dd;
+  font-size: 14px;
+  line-height: 1.6;
 }
 #contact .social {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -870,3 +944,28 @@ label {
   height: 90px;
   object-fit: contain;
 }
+
+/* Efecto de brillo para el título Contactanos */
+#contact .contact-glow {
+  color: #ffffff !important;
+  -webkit-text-fill-color: initial;
+
+  cursor: default;
+
+  transition:
+    color 0.25s ease,
+    text-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+#contact .contact-glow:hover {
+  color: #9dccff !important;
+
+  transform: translateY(-2px);
+
+  text-shadow:
+    0 0 6px rgba(92, 169, 251, 0.45),
+    0 0 14px rgba(92, 169, 251, 0.25),
+    0 0 28px rgba(92, 169, 251, 0.12);
+}
+
