@@ -87,12 +87,14 @@ hr {
   color: #333;
   text-transform: uppercase;
 }
+
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #555;
-  font-size: 15px;
-  font-weight: 400;
+  color: #3d4652;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   padding: 8px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
@@ -202,6 +204,28 @@ a:focus,
 .btn.active.focus {
   outline: none;
   outline-offset: none;
+}
+/* Logo Pellati IT */
+#menu a.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#menu a.navbar-brand .brand-logo {
+  height: 52px;
+  width: auto;
+  display: block;
+
+  transition: filter 0.35s ease;
+}
+
+/* Hover del logo */
+#menu a.navbar-brand .brand-logo:hover {
+  filter:
+    brightness(1.08)
+    drop-shadow(0 0 5px rgba(92, 169, 251, 0.45));
 }
 /* Header Section */
 .intro {
@@ -588,16 +612,15 @@ header .intro-text {
 
   background: linear-gradient(
     135deg,
-    #3d4652 0%,
-    #303b47 50%,
-    #25313d 100%
+    #4d6072 0%,
+    #496785 50%,
+    #365d86 100%
   );
 
   color: #fff;
 }
 
-  color: #fff;
-}
+
 #contact .section-title {
   margin-bottom: 40px;
 }
@@ -752,9 +775,16 @@ label {
 }
 
 #menu a.navbar-brand .brand-icon {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
+  width: 27px;
+  height: 27px;
+  margin-right: 3px;
+
+  transition: filter 0.35s ease;
+}
+#menu a.navbar-brand .brand-icon:hover {
+  filter: brightness(0) saturate(100%)
+    invert(58%) sepia(79%) saturate(1114%)
+    hue-rotate(181deg) brightness(101%) contrast(97%);
 }
 /* Lightbox - Galería de soluciones */
 
@@ -824,4 +854,18 @@ label {
 
 .pellati-lightbox-close:hover {
   opacity: 0.7;
+}
+
+#menu a.navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0;
+}
+
+#menu a.navbar-brand .brand-logo {
+  display: block;
+  width: auto;
+  height: 90px;
+  object-fit: contain;
 }

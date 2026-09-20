@@ -17,13 +17,12 @@ export const Navigation = () => {
             <span className="icon-bar"></span>
           </button>
 
-       <a className="navbar-brand page-scroll" href="#page-top">
+<a className="navbar-brand page-scroll" href="#page-top">
   <img
-    src="img/windows-svgrepo-com.svg"
-    alt=""
-    className="brand-icon"
+    src="img/logo-pellati-it.png"
+    alt="Pellati IT"
+    className="brand-logo"
   />
-  Pellati IT
 </a>
         </div>
 
