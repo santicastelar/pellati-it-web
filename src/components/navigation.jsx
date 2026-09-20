@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Navigation = (props) => {
+export const Navigation = () => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -11,15 +11,20 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="sr-only">Abrir navegación</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
-          </a>{" "}
+
+       <a className="navbar-brand page-scroll" href="#page-top">
+  <img
+    src="img/windows-svgrepo-com.svg"
+    alt=""
+    className="brand-icon"
+  />
+  Pellati IT
+</a>
         </div>
 
         <div
@@ -28,38 +33,34 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
+              <a href="#page-top" className="page-scroll">
+                Inicio
               </a>
             </li>
-            <li>
-              <a href="#about" className="page-scroll">
-                About
-              </a>
-            </li>
+
             <li>
               <a href="#services" className="page-scroll">
-                Services
+                Servicios
               </a>
             </li>
+
+  {/*
+<li>
+  <a href="#about" className="page-scroll">
+    Nosotros
+  </a>
+</li>
+*/}
+
             <li>
               <a href="#portfolio" className="page-scroll">
-                Gallery
+                Experiencia
               </a>
             </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#team" className="page-scroll">
-                Team
-              </a>
-            </li>
+
             <li>
               <a href="#contact" className="page-scroll">
-                Contact
+                Contacto
               </a>
             </li>
           </ul>

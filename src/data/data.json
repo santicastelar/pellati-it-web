@@ -1,184 +1,124 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Soluciones informáticas",
+    "paragraph": "Soporte técnico y soluciones IT para tu empresa."
   },
+
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "En Pellati IT brindamos soluciones informáticas orientadas a empresas, profesionales y organizaciones. Trabajamos para resolver problemas tecnológicos, mejorar la infraestructura y acompañar a nuestros clientes en sus necesidades IT.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Atención personalizada",
+      "Soporte remoto y presencial",
+      "Soluciones adaptadas a cada cliente",
+      "Asistencia técnica"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Redes e infraestructura",
+      "Servidores",
+      "Mantenimiento informático",
+      "Soluciones para empresas"
     ]
   },
+
   "Gallery": [
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
-    }
-  ],
-  "Services": [
-    {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }
-  ],
-  "Testimonials": [
-    {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    }
-  ],
-  "Team": [
-    {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
-    }
-  ],
-  "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+  {
+    "title": "Optimización y actualización de equipos",
+    "largeImage": "img/portfolio/01-large.jpg",
+    "smallImage": "img/portfolio/01-small.jpg"
   },
+  {
+    "title": "Mantenimiento de equipos",
+    "largeImage": "img/portfolio/02-large.jpg",
+    "smallImage": "img/portfolio/02-small.jpg"
+  },
+  {
+    "title": "Optimización de Windows",
+    "largeImage": "img/portfolio/03-large.jpg",
+    "smallImage": "img/portfolio/03-small.jpg"
+  },
+  {
+    "title": "Instalación y configuración de software",
+    "largeImage": "img/portfolio/04-large.jpg",
+    "smallImage": "img/portfolio/04-small.jpg"
+  },
+  {
+    "title": "Asistencia remota",
+    "largeImage": "img/portfolio/05-large.jpg",
+    "smallImage": "img/portfolio/05-small.jpg"
+  },
+  {
+    "title": "Soluciones Cloud",
+    "largeImage": "img/portfolio/06-large.jpg",
+    "smallImage": "img/portfolio/06-small.jpg"
+  }
+],
+
+  "Services": [
+   {
+  "icon": "fa fa-desktop",
+  "name": "Soporte técnico",
+  "text": "Soluciones rápidas a tus problemas informáticos, software y hardware."
+},
+ {
+  "icon": "fa fa-sitemap",
+  "name": "Redes e infraestructura",
+  "text": "Configuración de redes, conexiones VPN y acceso de escritorio remoto, para trabajar de forma segura desde cualquier lugar."
+},
+    {
+  "icon": "fa fa-server",
+  "name": "Servidores",
+  "text": "Implementación y mantenimiento de redes, servidores y sistemas informáticos."
+},
+    {
+  "icon": "fa fa-cloud",
+  "name": "Soluciones Cloud",
+  "text": "Google Drive, Servidores FTP, recursos SMB y dispositivos NAS."
+},
+   {
+  "icon": "fa fa-database",
+  "name": "Backup y recuperación",
+  "text": "Recuperación de archivos borrados y respaldo automatizado de tus datos."
+},
+  {
+  "icon": "fa fa-shield",
+  "name": "Seguridad informática",
+  "text": "Detección y eliminación de virus, malware y otras amenazas en tus equipos."
+}
+  ],
+
+  "Testimonials": [],
+
+  "Team": [],
+
+  "Contact": {
+    "address": "Buenos Aires, Argentina",
+    "phone": "",
+    "email": "",
+    "facebook": "",
+    "twitter": "",
+    "youtube": ""
+  },
+
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-wrench",
+      "title": "Soporte técnico",
+      "text": "Asistencia para resolver problemas informáticos y mantener tus equipos funcionando correctamente."
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-building",
+      "title": "Soluciones para empresas",
+      "text": "Servicios IT adaptados a las necesidades y estructura de cada organización."
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-laptop",
+      "title": "Soporte remoto",
+      "text": "Resolución de incidencias y asistencia informática de forma remota."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-cogs",
+      "title": "Infraestructura IT",
+      "text": "Implementación y mantenimiento de redes, servidores y sistemas informáticos."
     }
   ]
 }
