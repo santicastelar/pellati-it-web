@@ -17,13 +17,13 @@ export const Navigation = () => {
             <span className="icon-bar"></span>
           </button>
 
-<a className="navbar-brand page-scroll" href="#page-top">
-  <img
-    src="img/logo-pellati-it.png"
-    alt="Pellati IT"
-    className="brand-logo"
-  />
-</a>
+          <a className="navbar-brand page-scroll" href="#page-top">
+            <img
+              src="img/logo-pellati-it.png"
+              alt="Pellati IT"
+              className="brand-logo"
+            />
+          </a>
         </div>
 
         <div
@@ -31,9 +31,16 @@ export const Navigation = () => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
+
             <li>
               <a href="#page-top" className="page-scroll">
                 Inicio
+              </a>
+            </li>
+
+            <li>
+              <a href="#portfolio" className="page-scroll">
+                Experiencia
               </a>
             </li>
 
@@ -43,25 +50,20 @@ export const Navigation = () => {
               </a>
             </li>
 
-  {/*
-<li>
-  <a href="#about" className="page-scroll">
-    Nosotros
-  </a>
-</li>
-*/}
-
+            {/*
             <li>
-              <a href="#portfolio" className="page-scroll">
-                Experiencia
+              <a href="#about" className="page-scroll">
+                Nosotros
               </a>
             </li>
+            */}
 
             <li>
               <a href="#contact" className="page-scroll">
                 Contacto
               </a>
             </li>
+
           </ul>
         </div>
       </div>
