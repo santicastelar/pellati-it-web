@@ -1148,3 +1148,121 @@ label {
     display: none;
   }
 }
+
+/* =========================
+   SOLUCIONES IT - MOBILE
+   ========================= */
+
+@media (max-width: 767px) {
+
+  #features {
+    width: 100%;
+    padding: 65px 0 45px;
+    overflow: hidden;
+  }
+
+  #features .container {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  #features .section-title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  #features .section-title h2 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  #features .section-title p {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Una tarjeta por fila */
+  #features .row > div[class*="col-"] {
+    width: 100%;
+    float: none;
+    display: block;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  #features i.fa {
+    width: 100px;
+    height: 100px;
+    padding: 30px 0;
+    margin-bottom: 20px;
+  }
+
+  #features h3 {
+    font-size: 21px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+
+  #features p {
+    max-width: 310px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+/* =========================
+   HERO / INTRO - MOBILE
+   ========================= */
+
+@media (max-width: 767px) {
+
+  .intro {
+    min-height: auto;
+    background-position: center center;
+  }
+
+  .intro .overlay {
+    min-height: auto;
+  }
+
+  header .intro-text {
+    padding-top: 220px;
+    padding-bottom: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .intro p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    padding: 0 10px;
+  }
+
+  .intro .btn-custom {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    padding: 13px 22px;
+    font-size: 14px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .intro-text {
+    overflow: hidden;
+  }
+}
