@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Header = (props) => {
+export const Header = () => {
   const [leavingTitle, setLeavingTitle] = useState(false);
 
   const handleMouseLeave = () => {
@@ -22,13 +22,11 @@ export const Header = (props) => {
                   className={leavingTitle ? "title-led-exit" : ""}
                   onMouseLeave={handleMouseLeave}
                 >
-                  {props.data ? props.data.title : "Pellati IT"}
+                  Soporte informático
                 </h1>
 
                 <p>
-                  {props.data
-                    ? props.data.paragraph
-                    : "Soluciones informáticas para tu empresa"}
+                 Soporte técnico y soluciones IT para tu empresa.
                 </p>
 
                 <a
